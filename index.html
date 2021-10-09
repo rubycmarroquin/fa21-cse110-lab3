@@ -12,7 +12,7 @@
    <body style="background-color: #222222">
       <!-- header of the page -->
       <header>
-         <h1>Meeting Minutes</h1>
+         <h1 style="position:static;">Meeting Minutes</h1>
          <div>
             <h2>Summary of Discussion - October 3, 2021</h2>
          </div>
@@ -320,15 +320,15 @@ Nullam hendrerit sem ut nulla semper consequat. Etiam id
       <!-- images -->
       <div id="pictures">
          <h3>Pictures & Diagrams</h3>
-         <img src="a-very-important-image.png" alt="" /><br />
+         <img src="a-very-important-image.png" alt="" style="height: auto; width: auto; max-width: none; max-height: none;"/><br />
          <i>Diagram A.1 - this is a very important image</i>
       </div>
 
       <!-- audio/video recordings -->
-      <div id="recordings">
-         <h3>Recordings</h3>
+      <div id="recordings" style="width: 50%">
+         <h3 style=>Recordings</h3>
 
-         <details>
+         <details style="position: relative">
             <summary>Audio Recording</summary>
             <audio controls>
                <source
@@ -338,7 +338,7 @@ Nullam hendrerit sem ut nulla semper consequat. Etiam id
             </audio>
          </details>
          <br />
-         <details>
+         <details style="position: relative">
             <summary>Video Recording</summary>
             <video width="640" height="480" controls>
                <source src="meet-the-team.mp4" type="video/mp4" />
