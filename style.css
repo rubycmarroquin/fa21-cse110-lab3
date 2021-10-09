@@ -1,0 +1,14 @@
+body {
+   color: #cccccc;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   color: white;
+}
+
+a {
+   color: darkred;
+}
