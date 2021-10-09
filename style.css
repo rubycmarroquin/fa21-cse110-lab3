@@ -4,7 +4,7 @@ body {
    flex-direction: column;
    align-items: center;
    margin: auto;
-   padding: 0 0 1cm 1cm;
+   padding: 0cm 1cm 0cm 1cm;
 }
 
 h1,
@@ -26,6 +26,12 @@ a:hover {
 
 a:active {
    color: pink;
+}
+
+p {
+   text-align: justify;
+   text-decoration: solid;
+   color: violet;
 }
 
 div {
