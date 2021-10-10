@@ -7,26 +7,30 @@
       <meta name="keywords" content="HTML" />
       <meta name="author" content="Ruby M" />
       <link rel="icon" type="image/svg" href="favicon.svg" />
+      <link rel="stylesheet" type="text/css" href="style.css" />
    </head>
-   <body>
+   <body style="background-color: #222222">
+      <!-- header of the page -->
       <header>
-         <h1>Meeting Minutes</h1>
+         <h1 style="position:static;">Meeting Minutes</h1>
          <div>
             <h2>Summary of Discussion - October 3, 2021</h2>
          </div>
       </header>
 
-      <div>
+      <!-- attendance list -->
+      <div class="outlined-div">
          <h3>Attendance List:</h3>
          <ul>
             <li>Sandra</li>
             <li>Felix</li>
             <li>Tina</li>
-            <li>Kendall</li>
+            <li style="display: none;">Kendall</li>
          </ul>
       </div>
 
-      <div>
+      <!-- Table of Contents -->
+      <div class="outlined-div">
          <h3>Table of Contents</h3>
          <nav>
             <ol>
@@ -40,6 +44,7 @@
          </nav>
       </div>
 
+      <!-- agenda -->
       <div id="agenda">
          <h3>Agenda</h3>
          <ol>
@@ -58,9 +63,10 @@
          </ol>
       </div>
 
+      <!-- old business -->
       <div id="old-business">
          <h3>Unfinished Business from Previous Meeting</h3>
-         <p>
+         <p style="display: inline;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             venenatis erat lectus, at imperdiet tellus hendrerit a. Vestibulum
             in ex sit amet risus dapibus porta ut vitae turpis. Duis eget mauris
@@ -73,7 +79,7 @@
             Aenean eu luctus dui, sit amet tincidunt orci. In scelerisque
             tristique ultrices. Proin convallis et eros sed lacinia.
          </p>
-         <p>
+         <p style="display: inline-block;">
             Duis placerat urna eu finibus dapibus. Mauris scelerisque velit eget
             laoreet interdum. Aenean luctus imperdiet massa. Aliquam consequat
             ac augue egestas molestie. Aenean ac rhoncus risus, at suscipit
@@ -85,6 +91,7 @@
          </p>
       </div>
 
+      <!-- new business -->
       <div id="new-business">
          <h3>New Businesses</h3>
          <main>
@@ -229,11 +236,12 @@
          </main>
       </div>
 
+      <!-- comments & questions -->
       <div id="comments">
          <h3>Additional Comments & Questions</h3>
          <ul>
             <li>
-               <strong
+               <strong class="strong-text"
                   >This text is a very important comment, so highlight this with
                   STRONG tag!!!!</strong
                >
@@ -247,17 +255,24 @@
             </li>
          </ul>
          <form>
-            <fieldset>
+            <fieldset >
                <legend>Some Radio Question</legend>
+               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1in; grid-auto-rows: minmax(100px, auto);">
+                  <div>
+                     <input type="radio" id="opt1" name="options" />
+                     <label for="opt1">opt1</label><br />
+                  </div>
 
-               <input type="radio" id="opt1" name="opt1" />
-               <label for="opt1">opt1</label><br />
+                  <div>
+                     <input type="radio" id="opt2" name="options" />
+                     <label for="opt2">opt2 </label><br />
+                  </div>
 
-               <input type="radio" id="opt2" name="opt2" />
-               <label for="opt2">opt2 </label><br />
-
-               <input type="radio" id="opt3" name="opt3" />
-               <label for="opt3">opt3</label>
+                  <div>
+                     <input type="radio" id="opt3" name="options" />
+                     <label for="opt3">opt3</label>
+                  </div>
+               </div>
                <br />
 
                <label>More options...</label>
@@ -309,16 +324,18 @@ Nullam hendrerit sem ut nulla semper consequat. Etiam id
          </form>
       </div>
 
+      <!-- images -->
       <div id="pictures">
          <h3>Pictures & Diagrams</h3>
-         <img src="a-very-important-image.png" alt="" /><br />
+         <img src="a-very-important-image.png" alt="" style="height: auto; width: auto; max-width: none; max-height: none;"/><br />
          <i>Diagram A.1 - this is a very important image</i>
       </div>
 
-      <div id="recordings">
-         <h3>Recordings</h3>
+      <!-- audio/video recordings -->
+      <div id="recordings" style="width: 50%">
+         <h3 style=>Recordings</h3>
 
-         <details>
+         <details style="position: relative">
             <summary>Audio Recording</summary>
             <audio controls>
                <source
@@ -328,7 +345,7 @@ Nullam hendrerit sem ut nulla semper consequat. Etiam id
             </audio>
          </details>
          <br />
-         <details>
+         <details style="position: relative">
             <summary>Video Recording</summary>
             <video width="640" height="480" controls>
                <source src="meet-the-team.mp4" type="video/mp4" />
@@ -337,6 +354,8 @@ Nullam hendrerit sem ut nulla semper consequat. Etiam id
          </details>
       </div>
       <br /><br />
+
+      <!-- Bottom of page-->
       <footer>
          <i>ANewMeetingMinutes© 2021</i>
       </footer>
