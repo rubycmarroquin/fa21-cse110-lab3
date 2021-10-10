@@ -241,7 +241,7 @@
          <h3>Additional Comments & Questions</h3>
          <ul>
             <li>
-               <strong
+               <strong class="strong-text"
                   >This text is a very important comment, so highlight this with
                   STRONG tag!!!!</strong
                >
@@ -255,17 +255,24 @@
             </li>
          </ul>
          <form>
-            <fieldset>
+            <fieldset >
                <legend>Some Radio Question</legend>
+               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1in; grid-auto-rows: minmax(100px, auto);">
+                  <div>
+                     <input type="radio" id="opt1" name="options" />
+                     <label for="opt1">opt1</label><br />
+                  </div>
 
-               <input type="radio" id="opt1" name="opt1" />
-               <label for="opt1">opt1</label><br />
+                  <div>
+                     <input type="radio" id="opt2" name="options" />
+                     <label for="opt2">opt2 </label><br />
+                  </div>
 
-               <input type="radio" id="opt2" name="opt2" />
-               <label for="opt2">opt2 </label><br />
-
-               <input type="radio" id="opt3" name="opt3" />
-               <label for="opt3">opt3</label>
+                  <div>
+                     <input type="radio" id="opt3" name="options" />
+                     <label for="opt3">opt3</label>
+                  </div>
+               </div>
                <br />
 
                <label>More options...</label>

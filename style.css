@@ -3,8 +3,16 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
+
    margin: auto;
    padding: 0cm 1cm 0cm 1cm;
+}
+
+@media only screen and (max-height: 500px) {
+   body {
+      background-color: red;
+   }
 }
 
 h1,
@@ -20,6 +28,14 @@ a {
    color: darkred;
 }
 
+a[href='#agenda'] {
+   color: tomato;
+}
+
+* {
+   background-color: #222222;
+}
+
 a:hover {
    color: red;
 }
@@ -28,19 +44,47 @@ a:active {
    color: pink;
 }
 
+@font-face {
+   font-family: 'Ephesis';
+   src: url('https://fonts.google.com/specimen/Ephesis');
+}
+
 p {
+   font-family: 'Ephesis', cursive;
    text-align: justify;
    text-decoration: solid;
    color: violet;
 }
 
+ul li {
+   color: skyblue;
+}
+
+li > span {
+   color: green;
+}
+
+p ~ p {
+   color: peru;
+}
+
+input + label {
+   color: red;
+}
+
+li.strong-text {
+   font-size: 40px;
+}
+
 div {
+   align-self: center;
    margin-top: 5px;
    margin-bottom: 5px;
    margin-left: 2px;
    margin-right: 2px;
 }
 
+/* added styling for divs that have outlines*/
 .outlined-div {
    border-style: solid;
    border-color: silver;
